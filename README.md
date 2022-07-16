@@ -4,7 +4,7 @@ Technologies used : ReactJs,Bootstrap
 
 API used : https://data.covid19india.org/data.json
 
-WEBSITE LINK : https://covid19-tracker7.netlify.app
+WEBSITE LINK : https://covid19-tracker007.netlify.app
 
 ----------------------------------------------------
 1) Home page
