@@ -1,38 +1,55 @@
-.App {
+.table{
+  width: 90%;
+  margin:0 auto;
+  box-shadow: 6px 6px 10px grey;
+  padding:10px;
+}
+tr:hover{
+  background-color: #ffa;
+}
+#card1{
+  max-width: 18rem;
+  margin-left:100px;
+  width:300px;
+  paddind:20px;
+  margin-top:50px;
+}
+.cardcls{
+  display: flex;
+  flex-wrap: wrap;
+}
+.cov{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table td{
+  padding:20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.banner{
+  display:flex;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+#h2b{
+  margin-top:45%;
+  /* float: right;
+  margin-left: 100px; */
+}
+#symp,.h2p{
+  text-align: center;
+  padding:30px;
+  color:#ff3700;
+}
+.symptoms,.preventions{
+  display:flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: auto;
+  padding:10px;
+  justify-content: space-around;
 }
-
-.App-link {
-  color: #61dafb;
+.imgw{
+  padding:10px;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vidb{
+  margin-left: -30px;
+  
 }

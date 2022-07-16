@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
-
-function App() {
+import StateData from './components/StateData';
+import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom'
+import Home from './components/Home';
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+       <div>
+        
+        <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/statedata">StateWise</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><h2>Covid-19 <span style={{color:'#ff3700'}}>Tracker</span></h2></li>
+        </ul>
+        </div>
+        <Switch>
+          <Route exact path='/' component={Home}></Route>
+          <Route exact path='/statedata' component={StateData}></Route>
+        </Switch>
+        </Router>
+        
+    
+     
+     
   );
 }
 
-export default App;
